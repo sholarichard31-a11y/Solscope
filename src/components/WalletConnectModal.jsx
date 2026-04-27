@@ -180,7 +180,12 @@ export default function WalletConnectModal({ open, onClose }) {
                     <WalletButton
                       name="Phantom"
                       description="Most popular Solana wallet"
-                      icon={<PhantomIcon size={22} />}
+                      icon={
+  <img
+    src="https://phantom.app/img/phantom-logo.svg"
+    className="w-5 h-5"
+  />
+}
                       loading={loadingWallet === 'phantom'}
                       onClick={handlePhantom}
                       disabled={connecting}
@@ -188,7 +193,12 @@ export default function WalletConnectModal({ open, onClose }) {
                     <WalletButton
                       name="Solflare"
                       description="Feature-rich Solana wallet"
-                      icon={<SolflareIcon size={22} />}
+                      icon={
+  <img
+    src="https://solflare.com/assets/logo.svg"
+    className="w-5 h-5"
+  />
+}
                       loading={loadingWallet === 'solflare'}
                       onClick={handleSolflare}
                       disabled={connecting}
